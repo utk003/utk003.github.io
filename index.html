@@ -1,7 +1,227 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Three Column Portfolio Template for Bootstrap 3</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom CSS for the '3 Col Portfolio' Template -->
+    <link href="css/3-col-portfolio.css" rel="stylesheet">
+
+    <!-- Import javascript -->
+    <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+
+    <!-- JavaScript scripts -->
+    <script src="scripts/hide_elements.js"></script>
+</head>
+
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+
+<nav class="navbar navbar-fixed-top navbar-inverse" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">Home</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="#about">Projects</a></li>
+                <li><a href="documentation/libs/utilities/index.html">Documentation</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container -->
+</nav>
+
+<div class="container"> <!-- Research and Development row -->
+    <div class="row">
+        <div class="col-lg-12">
+            <h1 class="page-header">Research and (Game/Product) Development (3)</h1>
+        </div>
+    </div>
+
+    <div class="row" id="rnd">
+        <div class="col-md-4 portfolio-item" id="rnd1">
+            <a href="https://github.com/utk003/Chess-AI"><img class="img-responsive" src="images/rnd/chess_ai.png"
+                                                              alt="AI Chess Player (dramatized)"
+                                                              title="Image taken from The New Atlantis (https://www.thenewatlantis.com/publications/can-chess-survive-artificial-intelligence)."></a>
+            <h3><a href="https://github.com/utk003/Chess-AI">Chess AI</a></h3>
+            <p>A chess implementation in C++ with many player AIs, including a neural-network-powered AI not unlike
+                Deepmind's AlphaZero chess engine....</p>
+        </div>
+
+        <div class="col-md-4 portfolio-item" id="rnd2">
+            <a href="https://github.com/utk003/Arcade-Repo"><img class="img-responsive"
+                                                                 src="images/rnd/arcade_repo.gif"
+                                                                 alt="Arcade Loading Screen"
+                                                                 title="GIF assets created by Aditya Singhvi (https://github.com/baboondude)."></a>
+            <h3><a href="https://github.com/utk003/Arcade-Repo">Arcade</a></h3>
+            <p>A 7-game arcade of classics: 2048, Breakout, Flappy Bird, Minesweeper, Pac-Man, Snake, and Tetris....</p>
+        </div>
+
+        <div class="col-md-4 portfolio-item" id="rnd3">
+            <a href="https://github.com/utk003/Hangouts-Chat-Parser"><img class="img-responsive"
+                                                                          src="http://placehold.it/700x400"
+                                                                          alt="temporary image"></a>
+            <h3><a href="https://github.com/utk003/Hangouts-Chat-Parser">Hangouts Chat Parser</a></h3>
+            <p>A program to go through your Google Hangouts chat logs in case you have a dispute with your friends over
+                something you said....</p>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="row text-center"> <!-- Page selector -->
+        <div class="col-lg-12">
+            <ul class="pagination">
+                <li id="rndl3"><a>&lt;&lt;&lt;</a></li>
+                <li id="rndl2"><a>&lt;&lt;</a></li>
+                <li id="rndl1"><a>&lt;</a></li>
+                <li id="rndshow"><a>Show All</a></li>
+                <li id="rndhide"><a>Collapse</a></li>
+                <li id="rndr1"><a>&gt;</a></li>
+                <li id="rndr2"><a>&gt;&gt;</a></li>
+                <li id="rndr3"><a>&gt;&gt;&gt;</a></li>
+            </ul>
+        </div>
+    </div>
+</div> <!-- /.container - Research and Development row -->
+
+<div class="container"> <!-- Libraries row -->
+    <div class="row">
+        <div class="col-lg-12">
+            <h1 class="page-header">My Libraries (2)</h1>
+        </div>
+    </div>
+
+    <div class="row" id="libs">
+        <div class="col-md-4 portfolio-item" id="libs1">
+            <a href="https://github.com/utk003/Utilities"><img class="img-responsive" src="http://placehold.it/700x400"
+                                                               alt="temporary image"></a>
+            <h3><a href="https://github.com/utk003/Utilities">Utilities Library</a></h3>
+            <p>A public library of personal utility classes I have created while working on other projects....</p>
+        </div>
+
+        <div class="col-md-4 portfolio-item" id="libs2">
+            <a href="https://github.com/utk003/JSON-Parser"><img class="img-responsive"
+                                                                 src="http://placehold.it/700x400"
+                                                                 alt="temporary image"></a>
+            <h3><a href="https://github.com/utk003/JSON-Parser">JSON Parsing Library</a></h3>
+            <p>A collection of Java classes for parsing (and searching through) JSON files....</p>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="row text-center"> <!-- Page selector -->
+        <div class="col-lg-12">
+            <ul class="pagination">
+                <li id="libsl3"><a>&lt;&lt;&lt;</a></li>
+                <li id="libsl2"><a>&lt;&lt;</a></li>
+                <li id="libsl1"><a>&lt;</a></li>
+                <li id="libsshow"><a>Show All</a></li>
+                <li id="libshide"><a>Collapse</a></li>
+                <li id="libsr1"><a>&gt;</a></li>
+                <li id="libsr2"><a>&gt;&gt;</a></li>
+                <li id="libsr3"><a>&gt;&gt;&gt;</a></li>
+            </ul>
+        </div>
+    </div>
+</div> <!-- /.container - Libraries row -->
+
+<div class="container"> <!-- Courses row -->
+    <div class="row">
+        <div class="col-lg-12">
+            <h1 class="page-header">Course Files (4)</h1>
+        </div>
+    </div>
+
+    <div class="row" id="clss">
+        <div class="col-md-4 portfolio-item" id="clss1">
+            <a href="https://github.com/utk003/Discrete-Math"><img class="img-responsive"
+                                                                   src="http://placehold.it/700x400"
+                                                                   alt="temporary image"></a>
+            <h3><a href="https://github.com/utk003/Discrete-Math">Discrete Mathematics</a></h3>
+            <p>Algorithm implementations for allocation, trees, networks, scheduling, and more....</p>
+        </div>
+
+        <div class="col-md-4 portfolio-item" id="clss2">
+            <a href="https://github.com/utk003/Compilers-and-Interpreters"><img class="img-responsive"
+                                                                                src="http://placehold.it/700x400"
+                                                                                alt="temporary image"></a>
+            <h3><a href="https://github.com/utk003/Compilers-and-Interpreters">Compilers and Interpreters</a>
+            </h3>
+            <p>2 versions of a compiler and an interpreter for a Pascal-esque language. The compiler output is
+                MIPS....</p>
+        </div>
+
+        <div class="col-md-4 portfolio-item" id="clss3">
+            <a href="https://github.com/utk003/Neural-Networks"><img class="img-responsive"
+                                                                     src="http://placehold.it/700x400"
+                                                                     alt="temporary image"></a>
+            <h3><a href="https://github.com/utk003/Neural-Networks">Neural Networks</a></h3>
+            <p>A general-purpose, easily configurable, MLP (multi-layer perceptron) implementing a custom-optimized
+                backpropagation algorithm....</p>
+        </div>
+
+        <div class="col-md-4 portfolio-item" id="clss4">
+            <a href="https://github.com/utk003/APCS-DS"><img class="img-responsive" src="http://placehold.it/700x400"
+                                                             alt="temporary image"></a>
+            <h3><a href="https://github.com/utk003/APCS-DS">AP CS with Data Structures</a></h3>
+            <p>A miscellaneous repository for all of the labs I worked on in my AP Computer Science w/ Data Structure
+                class....</p>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="row text-center"> <!-- Page selector -->
+        <div class="col-lg-12">
+            <ul class="pagination">
+                <li id="clssl3"><a>&lt;&lt;&lt;</a></li>
+                <li id="clssl2"><a>&lt;&lt;</a></li>
+                <li id="clssl1"><a>&lt;</a></li>
+                <li id="clssshow"><a>Show All</a></li>
+                <li id="clsshide"><a>Collapse</a></li>
+                <li id="clssr1"><a>&gt;</a></li>
+                <li id="clssr2"><a>&gt;&gt;</a></li>
+                <li id="clssr3"><a>&gt;&gt;&gt;</a></li>
+            </ul>
+        </div>
+    </div>
+</div> <!-- /.container - Courses row -->
+
+<div class="container">
+    <hr>
+    <footer>
+        <div class="row">
+            <div class="col-lg-12">
+                <p>Copyright &copy; Utkarsh Priyam <span id="getCurrentDate"></span></p>
+            </div>
+        </div>
+    </footer>
+</div><!-- /.container -->
+
+<!-- JavaScript -->
+<script src="js/jquery-1.10.2.js"></script>
+<script src="js/bootstrap.js"></script>
+<script type="text/javascript">
+    var dt = new Date();
+    document.getElementById('getCurrentDate').innerHTML = dt.getFullYear();
+</script>
 </body>
+
 </html>
