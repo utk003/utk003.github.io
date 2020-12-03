@@ -6,47 +6,49 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Three Column Portfolio Template for Bootstrap 3</title>
+    <title>utk003 Home Page</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
 
-    <!-- Custom CSS for the '3 Col Portfolio' Template -->
+    <!-- Custom CSS styles -->
     <link href="css/3-col-portfolio.css" rel="stylesheet">
-
-    <!-- Import javascript -->
-    <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
-
-    <!-- JavaScript scripts -->
-    <script src="scripts/hide_elements.js"></script>
+    <link href="css/navbar.css" rel="stylesheet">
 </head>
 
 <body>
 
-<nav class="navbar navbar-fixed-top navbar-inverse" role="navigation">
-    <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="index.html">Home</a>
+<div class="my-navbar">
+    <a href="index.html">Home</a>
+    <div class="my-dropdown">
+        <button class="my-dropdown-button" id="proj_dropdown" onclick="openDropdown('proj_dropdown')">
+            Projects
+            <img src="images/up.png" alt="(up)" class="hide" id="proj_dropdown_up" height="16" width="16">
+            <img src="images/down.png" alt="(down)" id="proj_dropdown_down" height="16" width="16">
+        </button>
+        <div class="my-dropdown-content" id="proj_dropdown_menu">
+            <a href="#r&amp;d">Research and Development</a>
+            <a href="#libraries">My Libraries</a>
+            <a href="#classes">Course Files</a>
         </div>
+    </div>
+    <div class="my-dropdown">
+        <button class="my-dropdown-button" id="doc_dropdown" onclick="openDropdown('doc_dropdown')">
+            Documentation
+            <img src="images/up.png" alt="(up)" class="hide" id="doc_dropdown_up" height="16" width="16">
+            <img src="images/down.png" alt="(down)" id="doc_dropdown_down" height="16" width="16">
+        </button>
+        <div class="my-dropdown-content" id="doc_dropdown_menu">
+            <a href="documentation/libs/utilities/overview-summary.html">Utilities Library</a>
+        </div>
+    </div>
+    <a href="#contact">Contact</a>
+</div>
 
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse navbar-ex1-collapse">
-            <ul class="nav navbar-nav">
-                <li><a href="#about">Projects</a></li>
-                <li><a href="documentation/libs/utilities/index.html">Documentation</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div><!-- /.navbar-collapse -->
-    </div><!-- /.container -->
-</nav>
-
-<div class="container"> <!-- Research and Development row -->
+<!-- Research and Development START -->
+<a id="r&amp;d"></a>
+<br/><br/>
+<div class="container">
     <div class="row">
         <div class="col-lg-12">
             <h1 class="page-header">Research and (Game/Product) Development (3)</h1>
@@ -98,9 +100,13 @@
             </ul>
         </div>
     </div>
-</div> <!-- /.container - Research and Development row -->
+</div> <!-- /.container -->
+<!-- Research and Development END -->
 
-<div class="container"> <!-- Libraries row -->
+<!-- Libraries START -->
+<a id="libraries"></a>
+<br/><br/>
+<div class="container">
     <div class="row">
         <div class="col-lg-12">
             <h1 class="page-header">My Libraries (2)</h1>
@@ -140,9 +146,13 @@
             </ul>
         </div>
     </div>
-</div> <!-- /.container - Libraries row -->
+</div> <!-- /.container -->
+<!-- Libraries END -->
 
-<div class="container"> <!-- Courses row -->
+<!-- Courses START -->
+<a id="classes"></a>
+<br/><br/>
+<div class="container">
     <div class="row">
         <div class="col-lg-12">
             <h1 class="page-header">Course Files (4)</h1>
@@ -202,8 +212,11 @@
             </ul>
         </div>
     </div>
-</div> <!-- /.container - Courses row -->
+</div> <!-- /.container -->
+<!-- Courses END -->
 
+<!-- Footer -->
+<br/><br/>
 <div class="container">
     <hr>
     <footer>
@@ -222,6 +235,11 @@
     var dt = new Date();
     document.getElementById('getCurrentDate').innerHTML = dt.getFullYear();
 </script>
+<script type="text/javascript">
+
+</script>
+<script src="scripts/hide_elements.js"></script>
+<script src="scripts/dropdown.js"></script>
 </body>
 
 </html>
