@@ -52,13 +52,15 @@
 <div class="container">
     <div class="row">
         <div class="col-lg-12">
-            <h1 class="page-header">Research and (Game/Product) Development <span class="list-size" id="rndsize"></span></h1>
+            <h1 class="page-header">Research and (Game/Product) Development <span class="list-size" id="rndsize"></span>
+            </h1>
         </div>
     </div>
 
     <div class="row" id="rnd">
         <div class="col-md-4 portfolio-item" id="rnd1">
-            <a href="https://github.com/utk003/Chess-AI"><img class="img-responsive" src="images/rnd/chess_ai.png"
+            <a href="https://github.com/utk003/Chess-AI"><img class="img-responsive"
+                                                              src="images/rnd/chess_ai.png"
                                                               alt="AI Chess Player (dramatized)"
                                                               title="Image taken from The New Atlantis (https://www.thenewatlantis.com/publications/can-chess-survive-artificial-intelligence)."></a>
             <h3><a href="https://github.com/utk003/Chess-AI">Chess AI</a></h3>
@@ -127,9 +129,9 @@
 
         <div class="col-md-4 portfolio-item" id="libs2">
             <a href="https://github.com/utk003/Java-Networking-Library"><img class="img-responsive"
-                                src="images/libs/java_networking_library.png"
-                                alt="Computers connected across a network"
-                                title="Image taken Onkar Panchare (Medium) (https://medium.com/@opanchare123/computer-networks-ae6989c2e774)"></a>
+                                                                             src="images/libs/java_networking_library.png"
+                                                                             alt="Computers connected across a network"
+                                                                             title="Image taken Onkar Panchare (Medium) (https://medium.com/@opanchare123/computer-networks-ae6989c2e774)"></a>
             <h3><a href="https://github.com/utk003/Java-Networking-Library">Java Networking Library</a></h3>
             <p>A simple and elegant networking API for novice and professional applications alike....</p>
         </div>
@@ -201,8 +203,10 @@
         </div>
 
         <div class="col-md-4 portfolio-item" id="clss4">
-            <a href="https://github.com/utk003/APCS-DS"><img class="img-responsive" src="http://placehold.it/700x400"
-                                                             alt="temporary image"></a>
+            <a href="https://github.com/utk003/APCS-DS"><img class="img-responsive"
+                                                             src="images/clss/APCSDS3.png"
+                                                             alt="AP CS A Logo + Java Logo"
+                                                             title="APCS/Java Logos graphic created by Utkarsh Priyam (me) (https://github.com/utk003)."></a>
             <h3><a href="https://github.com/utk003/APCS-DS">AP CS with Data Structures</a></h3>
             <p>A miscellaneous repository for all of the labs I worked on in my AP Computer Science w/ Data Structure
                 class....</p>
@@ -235,7 +239,7 @@
     <footer>
         <div class="row">
             <div class="col-lg-12">
-                <p>Copyright &copy; Utkarsh Priyam <span id="getCurrentDate"></span></p>
+                <p>Copyright &copy; Utkarsh Priyam <span class="year-span"></span></p>
             </div>
         </div>
     </footer>
@@ -245,15 +249,14 @@
 <script src="js/jquery-1.10.2.js"></script>
 <script src="js/bootstrap.js"></script>
 <script type="text/javascript">
-    var dt = new Date();
-    document.getElementById('getCurrentDate').innerHTML = dt.getFullYear();
-</script>
-<script type="text/javascript">
-    var dt = new Date();
-    document.getElementById('getCurrentDate').innerHTML = dt.getFullYear();
-</script>
-<script type="text/javascript">
-
+    const startYear = 2020;
+    const yearSpots = document.getElementsByClassName("year-span");
+    const year = new Date().getFullYear();
+    for (let i = yearSpots.length - 1; i >= 0; i--)
+        if (startYear === year)
+            yearSpots.item(i).innerHTML = year;
+        else
+            yearSpots.item(i).innerHTML = startYear + "-" + year;
 </script>
 <script src="scripts/list_elements_util.js"></script>
 <script src="scripts/dropdown.js"></script>
