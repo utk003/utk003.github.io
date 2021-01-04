@@ -1,2 +1,4 @@
 me.utk.util.data
+me.utk.util.function.lambda
+me.utk.util.function.void_lambda
 me.utk.util.misc
