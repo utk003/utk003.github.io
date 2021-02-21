@@ -13,8 +13,20 @@
     z-index: 1030;
 }
 
-.my-navbar a {
+.float-left {
+}
+.float-right {
+}
+
+.my-navbar > .float-left {
     float: left;
+}
+
+.my-navbar > .float-right {
+    float: right;
+}
+
+.my-navbar a {
     font-size: 16px;
     color: white;
     text-align: center;
