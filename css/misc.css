@@ -2,3 +2,7 @@
     font-weight: normal;
     color: slategray;
 }
+
+.big-links a {
+    font-size: 14px;
+}
